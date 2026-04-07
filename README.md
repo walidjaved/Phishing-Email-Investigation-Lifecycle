@@ -53,3 +53,18 @@
     <td>Sysmon</td>
     <td>Detailed Windows Logging</td>
 </table>
+
+<h2>Lab Architecture</h2>
+<p><b>Environment Layout</b></p>
+<ul>
+  <li>Windows 11 acted as the target endpoint where suspicious user activity was generated</li>
+  <li>Splunk Enterprise (Ubuntu) served as the SIEM for centralized log collection and detection</li>
+  <li>Kali Linux was used to simulate attacker activity and support lab testing</li>
+</ul>
+<p><b>Data Flow</b></p>
+<ol>
+  <li>Windows 11 endpoint generated Sysmon and Windows event logs</li>
+  <li>Splunk Universal Forwarder sent logs to the Splunk server</li>
+  <li>Splunk Enterprise indexed the logs into custom indexes</li>
+  <li>Custom searches and dashboards were created to detect and investigate suspicious activity</li>
+</ol>
