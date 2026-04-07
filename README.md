@@ -68,3 +68,23 @@
   <li>Splunk Enterprise indexed the logs into custom indexes</li>
   <li>Custom searches and dashboards were created to detect and investigate suspicious activity</li>
 </ol>
+
+<h2>Log Sources Used</h2>
+
+<p><b>Windows Event Logs</b></p>
+<p>Used for:</p>
+<ul>
+  <li>authentication activity</li>
+  <li>process execution context</li>
+  <li>endpoint visibility</li>
+</ul>
+
+<p><b>Sysmon Logs</b></p>
+<p>Used for:</p>
+<ul>
+  <li>process creation</li>
+  <li>network connections</li>
+  <li>command-line visibility</li>
+  <li>parent-child process relationships</li>
+  <li>suspicious executable activity</li>
+</ul>
